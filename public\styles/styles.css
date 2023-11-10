@@ -1,0 +1,117 @@
+html{
+  background-color: #E1ECC8;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.todo-list{
+    background-color: #F7FFE5;
+    padding-top: 50px;
+    width: 400px;
+    height: 550px;
+    border-radius: 25px;
+}
+
+form{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.date{
+  width: 400px;
+    background-color: #A0C49D;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 28px;
+    border-radius: 15px 15px 0 0;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+.new-task {
+    font-size: 20px; /* Change the font size */
+    padding: 10px;  /* Adjust padding */
+    width: 300px;   /* Set a specific width */
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 50px;
+  }
+
+  
+  /* Style the submit button */
+  .submit-button {
+    font-size: 30px; /* Change the font size */
+    padding: 10px 20px; /* Adjust padding horizontally and vertically */
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #A0C49D;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .task-list{
+    overflow:auto;
+    height: 85%;
+  }
+
+  /* Style the list items */
+  .task-list li{
+    font-size: 18px; /* Change the font size */
+    margin-bottom: 10px; /* Add margin between list items */
+    margin-left: -30px;
+    padding-top: 5px;
+    height: 50px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  
+
+  header ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  background-color: #F7FFE5;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.nav a:hover{
+  background-color: #A0C49D;
+}
+
+
+form{
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 25vh;
+}
