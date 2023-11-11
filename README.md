@@ -7,5 +7,5 @@ This project is a basic To-Do application that allows users to manage tasks for 
 
 ## Features
 
--Add tasks for today and work separately.
--View and manage tasks for today and work.
+- Add tasks for today and work separately.
+- View and manage tasks for today and work.
