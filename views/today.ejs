@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
     <header>
-        <ul>
-            <li class="nav">
-                <a href="/" class="today"> Today</a>
-            </li>
-            <li class="nav">
-                <a href="/work" class="work"> Work</a>
-            </li>
-        </ul>
+      <ul>
+        <li class="nav">
+          <a href="/" class="today"> Today</a>
+        </li>
+        <li class="nav">
+          <a href="/work" class="work"> Work</a>
+        </li>
+      </ul>
     </header>
     <div class="container">
-        <div class="todo-list">
-            <div class="date">
-                Today
-                <br>
-                <%= currentDate %>
-            </div>
-    <form action = "/" method = "POST">
-        <input type = "text" name = "nTask" class="new-task" placeholder="New Task" >
-        <input type = "submit" class="submit-button" value="+"> 
-    </form>
-    
-    <ul class="task-list">
-        <% for(var i = 0; i < listForToday.length; i++){ %>
-            <li>
-                <input type = "checkbox"><%= listForToday[i] %>
-            </li>
-       <% } %>
-    </ul>
-    </div>
-    </div>
-<footer><p>© Akeel Butt. All rights reserved.</p></footer>
+      <div class="todo-list">
+        <div class="date">
+          Today
+          <br />
+          <%= currentDate %>
+        </div>
+        <form action="/" method="POST">
+          <input
+            type="text"
+            name="nTask"
+            class="new-task"
+            placeholder="New Task"
+          />
+          <input type="submit" class="submit-button" value="+" />
+        </form>
 
-</body>
+        <ul class="task-list">
+          <% for(var i = 0; i < listForToday.length; i++){ %>
+            <li>
+                <input type="checkbox" />
+                <span><%= listForToday[i] %></span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+    <footer><p>© Akeel Butt. All rights reserved.</p></footer>
+  </body>
 </html>
